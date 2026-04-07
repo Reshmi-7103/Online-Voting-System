@@ -1,0 +1,30 @@
+.admin-login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0d1b2a;
+}
+
+.admin-login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.admin-login-box input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.admin-login-box button {
+  width: 100%;
+  padding: 10px;
+  background: #0077b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,59 @@
+.sidebar {
+  width: 230px;
+  height: calc(100vh - 70px); /* full height minus navbar */
+
+  position: fixed;
+  top: 70px;   /* exactly navbar ke niche */
+  left: 0;
+
+  background: linear-gradient(180deg, #ff4e50, #fc913a);
+  color: white;
+  padding: 20px;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar {
+  transition: 0.3s;
+}
+
+.sidebar.closed {
+  left: -230px;
+}
+
+.sidebar {
+  width: 230px;
+  height: calc(100vh - 70px);
+
+  position: fixed;
+  top: 70px;     /* navbar ke niche chipka */
+  left: 0;
+
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+
+  overflow-y: auto;   /* scroll inside sidebar */
+}
+
+/* links */
+.sidebar a {
+  display: block;
+  margin: 12px 0;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* title */
+.menu-title {
+  margin-bottom: 15px;
+}

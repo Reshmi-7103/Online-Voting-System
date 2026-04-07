@@ -1,0 +1,151 @@
+/* NAVBAR FIXED */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  height: 80px;
+  z-index: 9999;
+
+  background: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 30px; /* 🔥 reduced (pehle 40 tha) */
+  box-sizing: border-box; /* 🔥 important */
+}
+
+/* ANIMATION ENTRY */
+@keyframes navbarFade {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* LEFT */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 45px;
+  animation: logoSpin 1.2s ease;
+}
+
+@keyframes logoSpin {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+.nav-left h2 {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* CENTER LINKS */
+.nav-links a {
+  margin: 0 22px;
+  color: rgb(8, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* underline animation */
+.nav-links a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: rgb(255, 168, 168);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.4s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* hover glow */
+.nav-links a:hover {
+  text-shadow: 0 0 10px rgba(254, 2, 2, 0.8);
+  text-underline-position: red;
+}
+
+/* RIGHT */
+.nav-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* PROFILE */
+.profile-box img {
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid white;
+}
+
+/* profile hover */
+.profile-box img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 15px rgba(255,255,255,0.7);
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: absolute;
+  top: 80px;  /* navbar height match */
+  right: 0;
+  background: white;
+  color: black;
+  width: 170px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  animation: dropdownFade 0.3s ease;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown a {
+  display: block;
+  padding: 14px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.dropdown a:hover {
+  background: #f5f5f5;
+}

@@ -1,0 +1,22 @@
+.schedule-container {
+  padding: 20px;
+}
+
+.schedule-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.schedule-box input {
+  padding: 8px;
+}
+
+.schedule-box button {
+  padding: 10px;
+  background: #0077b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

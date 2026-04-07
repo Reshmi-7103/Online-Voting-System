@@ -1,0 +1,73 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.not-logged {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.not-logged button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: linear-gradient(90deg, #ff4e50, #fc913a);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.not-logged button:hover {
+  transform: scale(1.05);
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.profile-card {
+  width: 500px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.profile-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-info p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.vote-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.vote-btn button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #ff4e50, #fc913a);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.vote-btn button:hover {
+  transform: scale(1.05);
+}

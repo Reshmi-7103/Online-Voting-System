@@ -1,0 +1,102 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR HEIGHT */
+.navbar {
+  height: 80px;
+}
+
+/* LAYOUT */
+.app-layout {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 230px;
+  height: calc(100vh - 80px);
+
+  position: fixed;
+  top: 80px;
+  left: 0;
+
+  background: linear-gradient(180deg, #ff512f, #dd2476);
+  color: white;
+  padding: 20px;
+}
+
+/* SIDEBAR LINKS */
+.sidebar a {
+  display: block;
+  color: white;
+  margin: 12px 0;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* MAIN WRAPPER */
+.main-wrapper {
+  margin-left: 230px;   /* sidebar width */
+  margin-top: 80px;     /* navbar height */
+
+  width: calc(100% - 230px);
+
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 80px);
+
+  padding-left: 50px;   /* 🔥 balanced spacing */
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  padding: 20px;   /* 🔥 perfect spacing */
+  background: #f5f6fa;
+  border-radius: 10px;  /* 🔥 premium look */
+}
+
+/* CAROUSEL */
+.carousel {
+  margin-top: 15px;
+}
+
+/* FORM */
+.form {
+  width: 300px;
+  margin: 50px auto;
+}
+
+.form input {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+/* BUTTON */
+button {
+  padding: 10px;
+  background: #2980b9;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  background: linear-gradient(90deg, #ff4e50, #fc913a, #36d1dc);
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 14px;
+}
